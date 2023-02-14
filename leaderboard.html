@@ -4,26 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="leaderboard.css" />
 </head>
-
 <body>
-
     <div class="container">
-
-        <div id="home" class="flex-column flex-center">
-
-            <a href="/quiz.html" class="input">Start</a>
-
-            <h1>IQ high or low?</h1>
-
-            <a href="/leaderboard.html" class="input-lb">Leaderboard</a>
-
-            <a href="/feedback.html" class="input-fb">feedback</a>
+        <div id="leaderboards" class="flex-center flex-column">
+        <h1 id="finalScore">Leaderboard</h1>
+        <ul id="highScoresList"></ul>
+        <a href="/index.html" class="input1">Menu</a>
 
         </div>
     </div>
-
+    <script src="leaderboard.js"></script>
 </body>
 </html>

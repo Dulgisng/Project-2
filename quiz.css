@@ -12,7 +12,7 @@
 
 
 
-.answers
+.choices
 {
     font-size: 30px;
     width: 400px;
@@ -25,7 +25,7 @@
     border-radius: 10px;
     display: flex;
 }
-.answers:hover
+.choices:hover
 {
     cursor: pointer;
     box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.16), 0 10px 10px 0 rgba(255, 255, 255, 0.12);
@@ -64,17 +64,25 @@
     text-align: center;
     font-size: 80px;
     position: absolute;
-    right: 100px;
+    right: 150px;
 }
 
-.correctans
+.correct
 {
-    background:green;
+    background: linear-gradient(180deg, rgb(8, 197, 40)40%, rgb(12, 138, 33)100%);
+    border-radius: 10px;
+    box-shadow: 0 30px 30px 0 rgba(9, 238, 66, 0.16), 0 10px 10px 0 rgba(31, 245, 11, 0.12);
+    font-size: 40px;
+    width: 480px;
 }
 
-.incorrectans
+.incorrect
 {
-    background: red;
+    background: linear-gradient(180deg, rgb(219, 20, 30)40%, rgb(219, 25, 67)100%);
+    box-shadow: 0 30px 30px 0 rgba(247, 29, 0, 0.16), 0 10px 10px 0 rgba(241, 11, 11, 0.12);
+    font-size: 40px;
+    border-radius: 10px;
+    width: 480px;
 }
 
 #status

@@ -1,5 +1,5 @@
-const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('.answer'));
+const question = document.querySelector('#questions');
+const choices = Array.from(document.querySelectorAll('.choices'));
 const progressText = document.querySelector('#progress');
 const scoreText = document.querySelector('#IQ');
 const status100 = document.querySelector('#status100');
@@ -13,11 +13,11 @@ let availableQuestions = []
 let questions = 
 [
     {
-    question:'What do cows drink?',
-    choice1: 'Milk',
-    choice2: 'Water',
-    choice3: 'Juice',
-    choice4: 'Grass',
+    question:"What do cows drink?",
+    choice1: "Milk",
+    choice2: "Water",
+    choice3: "Juice",
+    choice4: "Grass",
     answer: 2, 
     },
 
@@ -55,12 +55,30 @@ let questions =
         choice3: 'Euro',
         choice4: 'Zloty',
         answer: 4,
+    },
+
+    {
+        question:'what is 153 times 231?',
+        choice1: '42643',
+        choice2: '35523',
+        choice3: '35343',
+        choice4: '2413',
+        answer: 3,
+    },
+    {
+        question:'when was the first ever world cup?',
+        choice1: '1992',
+        choice2: '1890',
+        choice3: '1872',
+        choice4: '1930',
+        answer: 4,
     }
+
 
 ]
 
 const SCORE_POINTS = 10
-const MAX_QUESTIONS = 5
+const MAX_QUESTIONS = 6
 
 startGame = () => {
             questionCounter = 0
@@ -71,17 +89,19 @@ startGame = () => {
 
 getNewQuestion = () => 
 {
-    if(availableQuestions.lenght === 0 || questionCounter > MAX_QUESTIONS) 
+    if(availableQuestions.lenght === 0 || questionCounter >= MAX_QUESTIONS) 
     {localStorage.setItem('mostRecentScore', score)
-return window.location.assign('/finish.html')}
+    return window.location.assign("/finish.html")
+}
 
-    questionCounter++
+    questionCounter++ 
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     status100.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
     
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
+
     choices.forEach(choice => {
         const number = choice.dataset['number']
         choice.innerText = currentQuestion['choice' + number]
@@ -98,15 +118,17 @@ choices.forEach(choice => {
         acceptingAnswers = false
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset ['number']
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correctans' : 'incorrectans'
 
-        if (classToApply ==='correctans') {incrementScore(SCORE_POINTS)}
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if (classToApply ==='correct') {incrementScore(SCORE_POINTS)}
         
         selectedChoice.parentElement.classList.add(classToApply)
 
         setTimeout (()=> 
             {selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()}, 800)
+            getNewQuestion()
+        }, 100)
             
     })
 })
