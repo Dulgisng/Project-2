@@ -2,7 +2,7 @@
 
 This is a quiz web application called "Knowledge Quiz Game" which have mutiple quiz questions for the user to play and it have the option to display multiple choices and it display the right answer for the user and also placed their ranking depend on how well they did on the leaderboard system. This is a site that hopes to demonstrate how pure JavaScript works in a real-world context. This quiz game is for everyone as it is mostly contained common known question and its purpose is to educate user and its a fun interactive activity for any quiz nerds to test their knowledge skills. Knowledge Quiz Game is a fully responsive JavaScript quiz game that hopes to accopmplish a great and fun interactive ways to educate and test the user knowlege and to test their limit on the ranking system. 
 
-![Responsice Mockup](media/love_maths_mockup.png)
+![Responsice Mockup](media/knowledge.png)
 
 ## Features 
 
