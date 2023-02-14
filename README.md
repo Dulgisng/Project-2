@@ -35,7 +35,7 @@ The main feature includes the main landing page, which features the option to b
 - It display various button in which the user can decided if they want to try the game again or return back to the menu. 
 - If the user decided to enter their name in the input and click submit they are able to see if their result is on the leaderboard ranking page.
 
-![Result](media/result.png)
+![Result](media/result.PNG)
 
 - __The Leaderboard Area__
 
