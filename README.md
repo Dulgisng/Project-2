@@ -10,33 +10,25 @@ In this section, you should go over the different parts of your project, and des
 
 ### Existing Features
 
-- __The Love Maths Logo and Heading__
+- __The Knowledge Quiz Game Home Page__
 
-  - Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
-
-- __The Game Area__
-
-  - This section will allow the user to play the maths game. The user will be able to easily see icons for addition,  subtraction, multiplication, and division games.
-  - The user will be able to select the type of maths game they will be playing by clicking on the different icons. 
+  - The quiz description heading of "IQ high or not" is easily visible for all user as it is featured in the centre of the page. After landing and viewing the website, the visitor will get a description of the Quiz game as well as two buttons to start the quiz and view the leaderboard.
 
 ![Home](media/landing.png)
 
-- __The Question section__
+- __The Quiz Area__
 
-  - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
-  - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly. 
+  - This section will allow the user to play the quiz game.
+  - The question section is where the user will be able to see the question to answer as part of the game. The user will be able answer the questions in the answer box provide. 
+  - The user will be able to select the correct answer of the quiz, they will be playing by clicking on the answer button. 
 
 ![Quiz](media/quiz.png)
 
-- __The Score Area__
+- __The Leaderboard Area__
 
-  - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
+  - This section will allow the user to see the current leaderboard ranking. 
 
-![leaderboard](media/leaderboard.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+![Leaderboard](media/leaderboard.png)
 
 ### Features Left to Implement
 
