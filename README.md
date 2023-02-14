@@ -40,6 +40,7 @@ The main feature includes the main landing page, which features the option to b
 - __The Leaderboard Area__
 
   - This section will allow the user to see the current leaderboard ranking. 
+  - There is also a button that can bring the user back to the menu if they wish so. 
 
 ![Leaderboard](media/leaderboard.png)
 
@@ -49,14 +50,9 @@ The main feature includes the main landing page, which features the option to b
 - We may also include a feature that informs the user if they have answered incorrectly and displays the correct answer.
 
 ## Testing 
+I did check through all of my project's features to ensure that they all functioned as intended, with the project providing a simple and straightforward approach for users to achieve their objectives. The website interface is simple to use, and users can navigate efficiently. There were many difficulties and challenges along the way, and I did manage to solve most of them. The testing on my website worked as expected until I git pushed the page to my repository. When I clicked on it, the github page of my site displayed the home page successfully, however the rest of the pages did not work and it failed to access it.
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-The website interface is easy to use and user can 
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+I therefore struggled to figure out how, but I eventually discovered the reason for it. I needed to redirect the a href and src to the appropriate directories. Then it proceeded to work, except my quiz page was corrupted due to an error in the quiz.js file, so I had to edit it, resulting in it now operates properly. The leaderboard page issue occurred last, and I was unable to change my code, thus has prevent the score stored from being displayed in the leaderboard.  The score was replaced with null. I was unable to figure out the cause, hence the issue persisted.
 
 
 ### Validator Testing 
@@ -74,7 +70,7 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ### Unfixed Bugs
 
-The unfixed bugs are present in the last page of the website of the leaderboard ranking, where the final score ranking is being displayed as null and not the user's stored score.
+The unfixed bugs are present in the last page of the website of the leaderboard ranking, where the final score ranking is being displayed as null and not the user's stored score. I couldnt find the solution to this problem, therefore it remained an unfixed bug in the code.
 
 ## Deployment
 
