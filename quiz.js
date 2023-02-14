@@ -1,7 +1,7 @@
-const question = document.querySelector('#questions');
-const answers = Array.from(document.querySelectorAll('#answer'));
-const progress = document.querySelector('#progress');
-const IQ = document.querySelector('#IQ');
+const question = document.querySelector('#question');
+const choices = Array.from(document.querySelectorAll('.answer'));
+const progressText = document.querySelector('#progress');
+const scoreText = document.querySelector('#IQ');
 const status100 = document.querySelector('#status100');
 
 let currentQuestion = {}
@@ -32,7 +32,7 @@ let questions =
 
     {
         question:'What is the Super Bowl ',
-        choice: 'NFL',
+        choice1: 'NFL',
         choice2: 'Mega cereal',
         choice3: 'Football',
         choice4: 'American basketball',
@@ -59,11 +59,10 @@ let questions =
 
 ]
 
-const SCORE_POINTS = 100
+const SCORE_POINTS = 10
 const MAX_QUESTIONS = 5
 
-startGame = () => 0
-{
+startGame = () => {
             questionCounter = 0
             score = 0
             availableQuestions = [...questions]
@@ -77,23 +76,24 @@ getNewQuestion = () =>
 return window.location.assign('/finish.html')}
 
     questionCounter++
-    progress.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     status100.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
     
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-    questions.innerText = currentQuestion.question
-    choices.foreach(choice => {
+    currentQuestion = availableQuestions[questionsIndex]
+    question.innerText = currentQuestion.question
+    choices.forEach(choice => {
         const number = choice.dataset['number']
         choice.innerText = currentQuestion['choice' + number]
     })
-    availableQuestions.splice(questionsIndex, 1)
+    availableQuestions.splice (questionsIndex,1)
 
     acceptingAnswers = true
 }
 
-choices.foreach(choice => {
+choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(acceptingAnswers) return
+        if(!acceptingAnswers) return
 
         acceptingAnswers = false
         const selectedChoice = e.target
@@ -101,11 +101,19 @@ choices.foreach(choice => {
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correctans' : 'incorrectans'
 
         if (classToApply ==='correctans') {incrementScore(SCORE_POINTS)}
+        
         selectedChoice.parentElement.classList.add(classToApply)
 
         setTimeout (()=> 
             {selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()}, 1000
-            )
+            getNewQuestion()}, 800)
+            
     })
 })
+
+incrementScore = num => {
+    score +=num
+    scoreText.innerText = score
+}
+
+startGame ()
