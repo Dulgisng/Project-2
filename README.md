@@ -10,7 +10,7 @@ The main feature includes the main landing page, which features the option to b
 
 ### Existing Features
 
-- __The Knowledge Quiz Game Home Page__
+- __The Knowledge Quiz Game Home Area__
 
   - The quiz description heading of "IQ high or not" is easily visible for all user as it is featured in the centre of the page. After landing and viewing the website, the visitor will get a description of the Quiz game as well as two buttons to start the quiz and view the leaderboard.
   - The button will changes colour to indicated that the mouse is pointing to the button to help guide with user navigation.
@@ -23,9 +23,17 @@ The main feature includes the main landing page, which features the option to b
   - The question section is where the user will be able to see the question to answer as part of the game. The user will be able answer the questions in the answer box provide. 
   - The user will be able to select the correct answer of the quiz, they will be playing by clicking on the answer button. 
   - Similar to the homepage feature the button will changes colour to indicated that the mouse is pointing to the button to help guide with user navigation.
-  
+  - At the bottom of the page, there is a green progress bar that shows how far the game has progressed.
+  - There is also a scoreboard on the top right corner which add and counts the user score once they chosen the correct answer.
+
 
 ![Quiz](media/quiz.png)
+
+- __The Result Area__
+
+- This section will allows the user to enter their name to see their result and see the current ranking on the leaderboard. 
+- It display various button in which the user can decided if they want to try the game again or return back to the menu. 
+- If the user decided to enter their name in the input and click submit they are able to see if their result is on the leaderboard ranking page.
 
 - __The Leaderboard Area__
 
@@ -35,13 +43,14 @@ The main feature includes the main landing page, which features the option to b
 
 ### Features Left to Implement
 
-- Another feature idea
+- Within the time restriction, add a timer to each question asked.
+- We may also include a feature that informs the user if they have answered incorrectly and displays the correct answer.
 
 ## Testing 
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+The website interface is easy to use and user can 
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
@@ -63,53 +72,22 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+The unfixed bugs are present in the last page of the website of the leaderboard ranking, where the final score ranking is being displayed as null and not the user's stored score.
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+  - If I make any commit changes, I use the git command in the terminal to pull and push the commit to my github repository.
 
-The live link can be found here - https://code-institute-org.github.io/love-maths/
-
-
-## Credits 
-
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
+The live link can be found here - https://dulgisng.github.io/Project-2/index.html
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The questions for the Quiz page was taken from Wikipedia Article A
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
-
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
+- The images used for the readme page were created using canva.com and my website screenshots. 
