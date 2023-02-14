@@ -6,13 +6,14 @@ This is a quiz web application called "Knowledge Quiz Game" which have mutiple q
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+The main feature includes the main landing page, which features the option to begin the game and view the leaderboard. When the user clicks the start button, the game will begin with many questions and multiple buttons from which to select the correct answer. When the game is over, the player can check the leaderboard, which includes the results and their ranking. This site is ideal for individuals who want to test their IQ knowledge, and by taking our quiz, the user will be able to see if they have a broad knowledge base.
 
 ### Existing Features
 
 - __The Knowledge Quiz Game Home Page__
 
   - The quiz description heading of "IQ high or not" is easily visible for all user as it is featured in the centre of the page. After landing and viewing the website, the visitor will get a description of the Quiz game as well as two buttons to start the quiz and view the leaderboard.
+  - The button will changes colour to indicated that the mouse is pointing to the button to help guide with user navigation.
 
 ![Home](media/landing.png)
 
@@ -21,6 +22,8 @@ In this section, you should go over the different parts of your project, and des
   - This section will allow the user to play the quiz game.
   - The question section is where the user will be able to see the question to answer as part of the game. The user will be able answer the questions in the answer box provide. 
   - The user will be able to select the correct answer of the quiz, they will be playing by clicking on the answer button. 
+  - Similar to the homepage feature the button will changes colour to indicated that the mouse is pointing to the button to help guide with user navigation.
+  
 
 ![Quiz](media/quiz.png)
 

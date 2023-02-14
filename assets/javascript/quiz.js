@@ -91,7 +91,7 @@ getNewQuestion = () =>
 {
     if(availableQuestions.lenght === 0 || questionCounter >= MAX_QUESTIONS) 
     {localStorage.setItem('mostRecentScore', score)
-    return window.location.assign("/finish.html")
+    return window.location.assign("finish.html")
 }
 
     questionCounter++ 
