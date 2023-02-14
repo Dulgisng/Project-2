@@ -2,7 +2,7 @@
 
 This is a quiz web application called "Knowledge Quiz Game" which have mutiple quiz questions for the user to play and it have the option to display multiple choices and it display the right answer for the user and also placed their ranking depend on how well they did on the leaderboard system. This is a site that hopes to demonstrate how pure JavaScript works in a real-world context. This quiz game is for everyone as it is mostly contained common known question and its purpose is to educate user and its a fun interactive activity for any quiz nerds to test their knowledge skills. Knowledge Quiz Game is a fully responsive JavaScript quiz game that hopes to accopmplish a great and fun interactive ways to educate and test the user knowlege and to test their limit on the ranking system. 
 
-![Responsice Mockup](media/knowledge.png)
+![Mockup](media/knowledge.png)
 
 ## Features 
 
@@ -14,27 +14,25 @@ In this section, you should go over the different parts of your project, and des
 
   - Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
 
-![Logo](media/love_maths_logo.png)
-
 - __The Game Area__
 
   - This section will allow the user to play the maths game. The user will be able to easily see icons for addition,  subtraction, multiplication, and division games.
   - The user will be able to select the type of maths game they will be playing by clicking on the different icons. 
 
-![Game](media/love_maths_icons.png)
+![Home](media/landing.png)
 
 - __The Question section__
 
   - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
   - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly. 
 
-![Question](media/love_maths_question.png)
+![Quiz](media/quiz.png)
 
 - __The Score Area__
 
   - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
 
-![score](media/love_maths_answer.png)
+![leaderboard](media/leaderboard.png)
 
 For some/all of your features, you may choose to reference the specific project files that implement them.
 
