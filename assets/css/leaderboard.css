@@ -16,3 +16,48 @@ font-size: 50px;
     position:absolute;
     top: 150px;
 }
+
+
+/* Media queries */
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+
+    /* Adjust font sizes and spacing for smaller screens */
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .input {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .input-lb {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    /* Adjust spacing and layout for larger screens */
+    h1 {
+        margin-bottom: 2rem;
+    }
+    .input {
+        margin-bottom: 2rem;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /* Adjust layout for even larger screens */
+    .container {
+        max-width: 960px;
+    }
+
+}
+
