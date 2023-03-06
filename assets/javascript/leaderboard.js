@@ -1,15 +1,9 @@
-const highScoresList = document.querySelector('#highScoresList')
-const highScores = JSON.parse(localStorage.getItem('highScores')) || []
-const userScore = JSON.parse(localStorage.getItem('userScore')) || {}
+const highScoresList = document.getElementById("highScoresList");
 
-// Check if the user has a score to add to the leaderboard
-if (Object.keys(userScore).length !== 0) {
-  highScores.push(userScore)
-  localStorage.setItem('highScores', JSON.stringify(highScores))
-}
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 highScoresList.innerHTML = highScores
-  .sort((a, b) => b.score - a.score)
-  .map(score => {
-    return `<li class="high-scores">${score.name} - ${score.score}</li>`
-  }).join('')
+    .map((score) => {
+        return `<li>${score.name} - ${score.score}</li>`;
+    })
+    .join("");
