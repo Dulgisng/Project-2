@@ -1,63 +1,29 @@
-body
-{
- color: white;
+body {
+    color: white;
 }
 
-#highScoresList
-{
-list-style: none;
-position: absolute;
-bottom: 200px;
-font-size: 50px;   
+#highScoresList {
+    list-style: none;
+    position: absolute;
+    bottom: 100px; /* Adjust this value to move the list down */
+    font-size: 50px;
 }
 
-#finalScore
-{
-    position:absolute;
+#finalScore {
+    position: absolute;
     top: 150px;
 }
 
-
-/* Media queries */
-
-/* Small devices (phones, 576px and up) */
-@media (min-width: 576px) {
-
-    /* Adjust font sizes and spacing for smaller screens */
-    h1 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
+/* Media query for screens with a maximum width of 480 pixels */
+@media only screen and (max-width: 480px) {
+    #highScoresList {
+      bottom: 50px;
+      font-size: 30px;
     }
-    .input {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
+    
+    #finalScore {
+      top: 100px;
     }
-    .input-lb {
-        font-size: 1.2rem;
-    }
+  }
 
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-    /* Adjust spacing and layout for larger screens */
-    h1 {
-        margin-bottom: 2rem;
-    }
-    .input {
-        margin-bottom: 2rem;
-    }
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-    /* Adjust layout for even larger screens */
-    .container {
-        max-width: 960px;
-    }
-
-}
 

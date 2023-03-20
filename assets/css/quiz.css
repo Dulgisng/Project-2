@@ -108,56 +108,45 @@
     font-size: 60px;
 }
 
-
-
-
 @media screen and (max-width: 700px)
 {
+    .choices {
+        font-size: 20px;
+        width: 200px;
+    }
 
+    .choices:hover {
+        width: 200px;
+    }
+
+    .questiontext {
+        font-size: 30px;
+        left: 10px;
+        width: 200px;
+    }
+
+    .score {
+        font-size: 30px;
+        margin-top: 28px;
+        margin-right: 10px;
+    }
+
+    .questiontext1 {
+        font-size: 30px;
+        right: 50px;
+    }
+
+    .correct, .incorrect {
+        font-size: 30px;
+        width: 280px;
+    }
+
+    #status {
+        height: 30px;
+        bottom: 10px;
+    }
+
+    .main-text {
+        font-size: 30px;
+    }
 }
-
-/* Media queries */
-
-/* Small devices (phones, 576px and up) */
-@media (min-width: 576px) {
-
-    /* Adjust font sizes and spacing for smaller screens */
-    h1 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
-    .input {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-    }
-    .input-lb {
-        font-size: 1.2rem;
-    }
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-    /* Adjust spacing and layout for larger screens */
-    h1 {
-        margin-bottom: 2rem;
-    }
-    .input {
-        margin-bottom: 2rem;
-    }
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-    /* Adjust layout for even larger screens */
-    .container {
-        max-width: 960px;
-    }
-
-}
-
-
-

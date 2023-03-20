@@ -1,29 +1,37 @@
-const username = document.querySelector('#username')
-const saveScoreBtn = document.querySelector('#saveScoreBtn')
-const finalScore = document.querySelector('#finalScore')
-const mostRecentScore = document.querySelector('#mostRecentScore')
+const username = document.getElementById('username');
+const saveScoreBtn = document.getElementById('saveScoreBtn');
+const finalScore = document.getElementById('finalScore');
+const mostRecentScore = localStorage.getItem('mostRecentScore');
+const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
-const highScores = JSON.parse(localStorage.getItem('highScores')) || []
+// update the final score displayed on the page
+finalScore.innerText = mostRecentScore;
 
-const MAX_HIGH_SCORES = 5
+// add an event listener to the save score button
+saveScoreBtn.addEventListener('click', function(event) {
+  event.preventDefault(); // prevent the form from submitting
 
-finalScore.innerText = mostRecentScore
-username.addEventListener('keyup', () => {
-    savescore.disabled = !username.value
-})
-saveHighScore = e => {
-    e.preventDefault ()
+  // create a new score object with the username and score
+  const score = {
+    score: mostRecentScore,
+    name: username.value
+  };
 
-    const score = {
-        score: mostRecentScore,
-        name: username.value
-    }
-    highScores.push(score)
-    highScores.sort((a,b) => {
-        return b.score - a.score
-    })
-    highScores.splice(5)
+  // add the new score object to the high scores array
+  highScores.push(score);
 
-    localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('leaderboard.html')
-}
+  // sort the high scores array by score (highest to lowest)
+  highScores.sort(function(a, b) {
+    return b.score - a.score;
+  });
+
+  // only keep the top 5 high scores
+  highScores.splice(5);
+
+  // update the high scores in localStorage
+  localStorage.setItem('highScores', JSON.stringify(highScores));
+
+  // redirect to the leaderboard page
+  window.location.assign('./leaderboard.html');
+});
+
